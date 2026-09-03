@@ -1,0 +1,19 @@
+SSM command: 36b81fba-c40d-4e4f-90a7-2d2fe75c07b4
+Instance: i-06b287fdae5ddb28d
+Status: Success
+
+source_files=2008
+source_bytes=35705951640
+tms_files=2008
+tms_bytes=16961132765
+bmd_files=2008
+bmd_bytes=794921048
+genindex_files=4
+genindex_bytes=1082597734
+generation_files=7
+generation_bytes=2086412498
+tantivy_files=167
+tantivy_bytes=45871043173
+
+Each byte total is the sum of regular-file lengths. The source total includes
+only `*.lkrn.zst`; index totals exclude the generation's linked source bundles.

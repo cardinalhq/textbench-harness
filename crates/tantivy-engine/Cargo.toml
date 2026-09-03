@@ -1,0 +1,42 @@
+# Copyright (c) 2025-2026 CardinalHQ, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+[package]
+name = "textbench-tantivy"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license.workspace = true
+repository.workspace = true
+description = "Tantivy engine adapter for the Q1-Q9 TextBench harness."
+
+[[bin]]
+name = "tok_diff"
+path = "src/bin/tok_diff.rs"
+
+[[bin]]
+name = "index"
+path = "src/bin/index.rs"
+
+[[bin]]
+name = "textbench-tantivy"
+path = "src/bin/q.rs"
+
+[[bin]]
+name = "storage"
+path = "src/bin/storage.rs"
+
+[lib]
+path = "src/lib.rs"
+name = "textbench_tantivy"
+
+[dependencies]
+tantivy = { git = "https://github.com/quickwit-oss/tantivy.git", rev = "266a6c48f2abded7a13dfbdc43801fdc7344114c" }
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }
+parquet = "59"
+arrow-array = "59"
+libc = "0.2"
+textbench = { path = "../harness" }

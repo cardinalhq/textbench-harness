@@ -1,0 +1,16 @@
+c425185d407e336bf7d5350cbf035fc873b6b192a5e82799d38729bcff57a280  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/canonical.json
+8f9bc2d53c73692fa0cc393a8e47e2ab2036c6a897cff9c9d0317a13e903be1a  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/canonical.md
+2c31cfdee5ca4346d071d4baba07e0d440e5b4accd4baddede163a65cbeeaf5a  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/canonical.stderr
+8f9bc2d53c73692fa0cc393a8e47e2ab2036c6a897cff9c9d0317a13e903be1a  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/canonical.stdout
+5ac9147bccdf5db17927ba9230d50b357683bc4a1ed30f4111d3b73d0b944485  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/canonical.time
+c02897e47e22834935bc5f4a12fe0429cbd61f4b997e2655bdfd3f0d6fd96c1f  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/host-and-binary.txt
+9a7c1703119174e364c6713d03f250d1bdf1ad2a6b292277f0ddf1047697a6c0  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation-no-postings.json
+c188ad21f6b0062d5949f5182b1cd784f203f53a7c0caedb571b552e0a1fc917  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation-no-postings.md
+e03722ab9a82d7a1d5409967c4eb38d1d65d9b61b4c18a48058462258ab042bf  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation-no-postings.stderr
+c188ad21f6b0062d5949f5182b1cd784f203f53a7c0caedb571b552e0a1fc917  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation-no-postings.stdout
+3888e8f1df9d9ce4654acac471f505f5d870eaf7c7472f67585d8562b2ca14cd  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation-no-postings.time
+be9be3d0cd19a1691a09f4ef6c197a3f04a27be2c76321ea23489fd9d97caba3  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation.json
+965868326acb1a7ac7a6f30766eac3a855b4485724ad2af0d7d038f0c7017419  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation.md
+5b1c9ff2aa3b57ba8c0a57debf225b954a4c69d58a37e383bbf34cd5582b18c5  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation.stderr
+965868326acb1a7ac7a6f30766eac3a855b4485724ad2af0d7d038f0c7017419  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation.stdout
+f1d80771cde018ba137d9035fa91dd27ea2a4bd2719cca18210c5097b1de65e5  /data/q1q9-final-02c556db/results-adaptive-38e8c7ab/no-generation.time

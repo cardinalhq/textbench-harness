@@ -1,0 +1,53 @@
+P10 Arm 2 build
+  2008 bundles from /data/p12/bundles_stripped (suffix ".lkrn.zst"), linked into /data/q1q9-final-02c556db/generation as symlinks in 0.028 s
+  columns: text="message" timestamp="chq_tsns" dimension="service_name"
+  vocabulary: textbench-q1-q9 — the SOURCE restricts what it yields; the builder holds no admission policy (that is P13)
+  building (peak memory is O(generation)) ...
+
+  build_id   92b34388b40c161f0c7d89787de7951b
+  manifest   /data/q1q9-final-02c556db/generation/generation.lkrnmf
+  1000000000 rows in 2008 bundles, 8 terms, span [1758585600000000000, 1758587364039037000]
+  dimension "service_name": 16 values
+  build wall clock 641.448 s  (one call: source walk, postings, dictionary, P6/P7 pair, publish — build_generation is a single production entry point and its internal phases are not separately instrumented)
+  artifacts 1.94 GiB (2086267523 B) across 5 files, peak RSS 24.61 GiB (26425925632 B)
+    terms.post     316.60 MiB (331977152 B)
+    terms.dict                  312 B
+    dim-0.dict                  587 B
+    dim-0.post     719.35 MiB (754289088 B)
+    dim-0.codes    953.67 MiB (1000000384 B)
+  OpenGeneration::open 0.388 s, build_id matches
+  independently walked 2008 bundles: 6003 partitions, 1000000000 rows (2008 x LKRNC003 container)
+  open_bundle(0) 0.007 s: 500000 rows at 0, ts [1758585600000000000, 1758585600910239000], row 0 text "Failed to place order"
+  open_bundle(2007) 0.004 s: 286095 rows at 999713905, ts [1758587363566931000, 1758587364039037000], row 0 text "\t/usr/local/bundle/gems/tilt-2.3.0/lib/tilt/temp"
+  verify_bundles() over all 2008 bundles: OK in 6.536 s
+  scanning 2008 bundles on 32 threads with genindex's tokenizer (a different implementation of the same frozen contract) ...
+  Q4: 151 rows, 3 groups — exact row set and ordered group vector match the scan
+  Q5: 108704929 rows, 14 groups — exact row set and ordered group vector match the scan
+  Q6: 100840574 rows, 9 groups — exact row set and ordered group vector match the scan
+  Q7: 16981567 rows, 1 groups — exact row set and ordered group vector match the scan
+
+P10_ARM2_BUILD=OK
+  report /data/q1q9-final-02c556db/generation-build.json
+	Command being timed: "/home/ec2-user/eprime/q1q9-fix/bench/genpred/target/release/gen_p10_build --bundles-dir /data/p12/bundles_stripped --suffix .lkrn.zst --out /data/q1q9-final-02c556db/generation --text-column message --timestamp-column chq_tsns --dimension-column service_name --vocabulary textbench-q1-q9 --generation 2026082402 --validation deep --link-mode symlink --verify true --verify-threads 32 --verify-bundles true --canonical true --report /data/q1q9-final-02c556db/generation-build.json"
+	User time (seconds): 1182.90
+	System time (seconds): 25.85
+	Percent of CPU this job got: 181%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:07.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25806568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 8205511
+	Voluntary context switches: 190691
+	Involuntary context switches: 4311
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 4075096
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

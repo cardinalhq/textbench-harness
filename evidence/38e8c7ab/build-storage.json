@@ -1,0 +1,110 @@
+{
+  "rows": 1000000000,
+  "normalization": "events_per_cpu_core_second = rows / (user_cpu_seconds + system_cpu_seconds)",
+  "source": {
+    "files": 2008,
+    "bytes": 35705951640,
+    "gib": 33.254,
+    "bytes_per_event": 35.70595164
+  },
+  "selected_cardinal_components": [
+    {
+      "name": "file_local_postings_tms",
+      "selected_by": ["Q1", "Q2", "Q3"],
+      "wall_seconds": 53.93,
+      "cpu_core_seconds": 1689.23,
+      "average_cpu_cores": 31.32264,
+      "events_per_wall_second": 18542555.164,
+      "events_per_cpu_core_second": 591985.698,
+      "bytes": 16961132765,
+      "bytes_per_event": 16.961132765
+    },
+    {
+      "name": "production_generation",
+      "selected_by": ["Q4", "Q5", "Q6", "Q7", "Q8", "Q9"],
+      "wall_seconds": 667.57,
+      "cpu_core_seconds": 1208.697504,
+      "average_cpu_cores": 1.810593,
+      "events_per_wall_second": 1497970.25,
+      "events_per_cpu_core_second": 827336.862,
+      "bytes": 2086412498,
+      "bytes_per_event": 2.086412498
+    }
+  ],
+  "cardinal_selected_q1_q9_stack": {
+    "wall_seconds_sequential": 721.5,
+    "cpu_core_seconds": 2897.927504,
+    "average_cpu_cores": 4.016532,
+    "events_per_wall_second": 1386001.386,
+    "events_per_cpu_core_second": 345074.195,
+    "index_bytes": 19047545263,
+    "index_gib": 17.739409,
+    "source_plus_index_bytes": 54753496903,
+    "source_plus_index_gib": 50.993168,
+    "index_bytes_as_percent_of_source": 53.345575
+  },
+  "built_but_not_selected": [
+    {
+      "name": "bitmap_dimensions_bmd",
+      "reason_not_charged_to_selected_stack": "No canonical Q1-Q9 sample opened or selected .bmd; Q1-Q3 selected file-local .tms and Q4-Q9 selected production generation.",
+      "wall_seconds": 5.62,
+      "cpu_core_seconds": 165.26,
+      "bytes": 794921048,
+      "bytes_per_event": 0.794921048
+    }
+  ],
+  "cardinal_if_bmd_is_shipped_anyway": {
+    "wall_seconds_sequential": 727.12,
+    "cpu_core_seconds": 3063.187504,
+    "events_per_wall_second": 1375288.813,
+    "events_per_cpu_core_second": 326457.327,
+    "index_bytes": 19842466311,
+    "index_gib": 18.479737,
+    "source_plus_index_bytes": 55548417951,
+    "source_plus_index_gib": 51.733496
+  },
+  "removed_benchmark_only_component": {
+    "name": "q4_q7_genindex",
+    "bytes": 1082597734,
+    "wall_seconds": 20.69,
+    "cpu_core_seconds": 615.437634,
+    "reason_not_charged": "The adaptive planner removes this benchmark-only serving path. It is not a production representation and was not used by 38e8c7ab."
+  },
+  "tantivy": {
+    "wall_seconds": 5274.429495107,
+    "cpu_core_seconds": 24473.932648,
+    "average_cpu_cores": 4.64011,
+    "events_per_wall_second": 189593.965,
+    "events_per_cpu_core_second": 40859.8,
+    "index_bytes": 45871043173,
+    "index_gib": 42.721,
+    "source_plus_index_bytes": 81576994813,
+    "body_indexed": true,
+    "body_stored": false,
+    "requires_source_for_original_message_fetch": true
+  },
+  "clickhouse_published": {
+    "total_serving_bytes": 53135582221,
+    "total_serving_gib": 49.486,
+    "full_text_index_bytes": 10894247839,
+    "exact_1b_cpu_core_seconds_published": false,
+    "derived_lower_bound_events_per_provisioned_vcpu_second": 108506.944
+  },
+  "comparison": {
+    "cardinal_selected_wall_throughput_multiple_over_tantivy": 7.310367,
+    "cardinal_selected_cpu_efficiency_multiple_over_tantivy": 8.445323,
+    "cardinal_selected_index_percent_smaller_than_tantivy": 58.475884,
+    "cardinal_selected_source_plus_index_percent_smaller_than_tantivy_production_equivalent": 32.881204,
+    "cardinal_selected_source_plus_index_percent_larger_than_clickhouse": 3.04488,
+    "cardinal_with_bmd_source_plus_index_percent_smaller_than_tantivy_production_equivalent": 31.9068,
+    "cardinal_with_bmd_source_plus_index_percent_larger_than_clickhouse": 4.5409
+  },
+  "evidence": {
+    "source": "storage-measurement.txt and source-fingerprints.json",
+    "tms_build": "tms-build.log",
+    "bmd_build": "bmd-build.log",
+    "generation_build": "generation-build.json and generation-build.log",
+    "tantivy_build": "tantivy-build.log",
+    "canonical_path_evidence": "canonical.json"
+  }
+}

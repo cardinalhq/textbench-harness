@@ -1,0 +1,722 @@
+{
+  "sha": "38e8c7ab2b9fbd94d7d47561f0b7b8eeaeab86d2",
+  "host": {
+    "available_parallelism": "32",
+    "nproc": "32",
+    "uname": "Linux ip-10-0-2-21.us-east-2.compute.internal 6.1.177-224.371.amzn2023.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jul 27 20:28:29 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "started_utc": "2026-08-25T16:47:56.858572243+00:00",
+  "ended_utc": "2026-08-25T16:48:43.917687965+00:00",
+  "corpus_id": "lkrn-p12-1b-2008-fp181a18a2",
+  "tantivy_index_id": "d11210df-meta30b9a80e-27seg",
+  "generation_build_id": "92b34388b40c161f0c7d89787de7951b",
+  "iters": 5,
+  "outcomes": [
+    {
+      "query": "Q4",
+      "description": "count(timeout)",
+      "cardinal_intended": "adaptive_planner",
+      "tantivy_intended": "tantivy_count",
+      "cardinal_path": {
+        "engine": "Cardinal",
+        "path": "file_local_postings",
+        "planned_path": "file_local_postings",
+        "workers": 1,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "bundle_open_attempts": 0,
+          "bundles_opened": 0,
+          "bundles_selected": 0,
+          "bytes_decompressed": 35705951640,
+          "bytes_mapped": 0,
+          "columns_inflated": 0,
+          "cpu_micros": 5855064,
+          "early_stop_index": 0,
+          "emit_micros": 0,
+          "eval_micros": 343774,
+          "filter_micros": 202579,
+          "matched_rows": 151,
+          "open_micros": 141181,
+          "other_micros": 14,
+          "partitions_skipped_by_bloom": 0,
+          "partitions_skipped_by_stats": 0,
+          "partitions_visited": 6003,
+          "planner_bundle_scan_bitmap_ops": 0,
+          "planner_bundle_scan_cost": 1008224912,
+          "planner_bundle_scan_eligible": 1,
+          "planner_bundle_scan_object_opens": 2008,
+          "planner_bundle_scan_row_visits": 1000000000,
+          "planner_candidate_count": 3,
+          "planner_file_local_postings_bitmap_ops": 0,
+          "planner_file_local_postings_cost": 16706832,
+          "planner_file_local_postings_eligible": 1,
+          "planner_file_local_postings_object_opens": 4016,
+          "planner_file_local_postings_row_visits": 0,
+          "planner_generation_eligible": 0,
+          "planner_selected_cost": 16706832,
+          "posting_bytes_touched": 0,
+          "rows_materialized": 1,
+          "sidecar_open_attempts": 2008,
+          "sidecars_opened": 2008,
+          "teardown_micros": 0,
+          "timed_sample_micros": 587963,
+          "timestamp_values_read": 0,
+          "topk_probe_micros": 0,
+          "topk_probe_rounds": 0,
+          "worker_tasks": 0,
+          "worker_threads": 0
+        }
+      },
+      "tantivy_path": {
+        "engine": "Tantivy",
+        "path": "tantivy_count",
+        "workers": 32,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "timed_sample_micros": 3078
+        }
+      },
+      "cardinal_timings": {
+        "samples_us": [
+          599210,
+          586082,
+          588990,
+          587963,
+          587952
+        ],
+        "warmup_us": 592184,
+        "p50_us": 587963,
+        "p95_us": 599210
+      },
+      "tantivy_timings": {
+        "samples_us": [
+          3208,
+          3141,
+          3078,
+          3064,
+          3054
+        ],
+        "warmup_us": 3097,
+        "p50_us": 3078,
+        "p95_us": 3208
+      },
+      "cardinal_answer": [
+        [
+          "count",
+          151
+        ]
+      ],
+      "tantivy_answer": [
+        [
+          "count",
+          151
+        ]
+      ],
+      "cardinal_matched": 151,
+      "tantivy_matched": 151,
+      "parity": "Pass",
+      "status": "Ok"
+    },
+    {
+      "query": "Q5",
+      "description": "count(5-token OR)",
+      "cardinal_intended": "adaptive_planner",
+      "tantivy_intended": "tantivy_count",
+      "cardinal_path": {
+        "engine": "Cardinal",
+        "path": "file_local_postings",
+        "planned_path": "file_local_postings",
+        "workers": 1,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "bundle_open_attempts": 0,
+          "bundles_opened": 0,
+          "bundles_selected": 0,
+          "bytes_decompressed": 35705951640,
+          "bytes_mapped": 0,
+          "columns_inflated": 0,
+          "cpu_micros": 10826522,
+          "early_stop_index": 0,
+          "emit_micros": 0,
+          "eval_micros": 501872,
+          "filter_micros": 360966,
+          "matched_rows": 108704929,
+          "open_micros": 140894,
+          "other_micros": 12,
+          "partitions_skipped_by_bloom": 0,
+          "partitions_skipped_by_stats": 0,
+          "partitions_visited": 6003,
+          "planner_bundle_scan_bitmap_ops": 0,
+          "planner_bundle_scan_cost": 5008224912,
+          "planner_bundle_scan_eligible": 1,
+          "planner_bundle_scan_object_opens": 2008,
+          "planner_bundle_scan_row_visits": 5000000000,
+          "planner_candidate_count": 3,
+          "planner_file_local_postings_bitmap_ops": 8032,
+          "planner_file_local_postings_cost": 18248976,
+          "planner_file_local_postings_eligible": 1,
+          "planner_file_local_postings_object_opens": 4016,
+          "planner_file_local_postings_row_visits": 0,
+          "planner_generation_eligible": 0,
+          "planner_selected_cost": 18248976,
+          "posting_bytes_touched": 0,
+          "rows_materialized": 1,
+          "sidecar_open_attempts": 2008,
+          "sidecars_opened": 2008,
+          "teardown_micros": 0,
+          "timed_sample_micros": 772468,
+          "timestamp_values_read": 0,
+          "topk_probe_micros": 0,
+          "topk_probe_rounds": 0,
+          "worker_tasks": 0,
+          "worker_threads": 0
+        }
+      },
+      "tantivy_path": {
+        "engine": "Tantivy",
+        "path": "tantivy_count",
+        "workers": 32,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "timed_sample_micros": 60407
+        }
+      },
+      "cardinal_timings": {
+        "samples_us": [
+          777687,
+          767033,
+          774934,
+          772468,
+          770092
+        ],
+        "warmup_us": 771374,
+        "p50_us": 772468,
+        "p95_us": 777687
+      },
+      "tantivy_timings": {
+        "samples_us": [
+          60361,
+          60589,
+          60407,
+          59289,
+          60614
+        ],
+        "warmup_us": 60724,
+        "p50_us": 60407,
+        "p95_us": 60614
+      },
+      "cardinal_answer": [
+        [
+          "count",
+          108704929
+        ]
+      ],
+      "tantivy_answer": [
+        [
+          "count",
+          108704929
+        ]
+      ],
+      "cardinal_matched": 108704929,
+      "tantivy_matched": 108704929,
+      "parity": "Pass",
+      "status": "Ok"
+    },
+    {
+      "query": "Q6",
+      "description": "count(3-token OR) by service",
+      "cardinal_intended": "adaptive_planner",
+      "tantivy_intended": "tantivy_terms_agg",
+      "cardinal_path": {
+        "engine": "Cardinal",
+        "path": "file_local_postings",
+        "planned_path": "file_local_postings",
+        "workers": 1,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "bundle_open_attempts": 0,
+          "bundles_opened": 0,
+          "bundles_selected": 0,
+          "bytes_decompressed": 35705951640,
+          "bytes_mapped": 0,
+          "columns_inflated": 0,
+          "cpu_micros": 9830083,
+          "early_stop_index": 0,
+          "emit_micros": 2,
+          "eval_micros": 600869,
+          "filter_micros": 459505,
+          "matched_rows": 100840574,
+          "open_micros": 141349,
+          "other_micros": 13,
+          "partitions_skipped_by_bloom": 0,
+          "partitions_skipped_by_stats": 0,
+          "partitions_visited": 6003,
+          "planner_bundle_scan_bitmap_ops": 0,
+          "planner_bundle_scan_cost": 3008224912,
+          "planner_bundle_scan_eligible": 1,
+          "planner_bundle_scan_object_opens": 2008,
+          "planner_bundle_scan_row_visits": 3000000000,
+          "planner_candidate_count": 3,
+          "planner_file_local_postings_bitmap_ops": 4016,
+          "planner_file_local_postings_cost": 17477904,
+          "planner_file_local_postings_eligible": 1,
+          "planner_file_local_postings_object_opens": 4016,
+          "planner_file_local_postings_row_visits": 0,
+          "planner_generation_eligible": 0,
+          "planner_selected_cost": 17477904,
+          "posting_bytes_touched": 0,
+          "rows_materialized": 10,
+          "sidecar_open_attempts": 2008,
+          "sidecars_opened": 2008,
+          "teardown_micros": 0,
+          "timed_sample_micros": 858313,
+          "timestamp_values_read": 0,
+          "topk_probe_micros": 0,
+          "topk_probe_rounds": 0,
+          "worker_tasks": 0,
+          "worker_threads": 0
+        }
+      },
+      "tantivy_path": {
+        "engine": "Tantivy",
+        "path": "tantivy_terms_agg",
+        "workers": 32,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "timed_sample_micros": 140757
+        }
+      },
+      "cardinal_timings": {
+        "samples_us": [
+          858220,
+          856347,
+          863024,
+          858313,
+          859798
+        ],
+        "warmup_us": 1061055,
+        "p50_us": 858313,
+        "p95_us": 863024
+      },
+      "tantivy_timings": {
+        "samples_us": [
+          140757,
+          142109,
+          136075,
+          136266,
+          143270
+        ],
+        "warmup_us": 144031,
+        "p50_us": 140757,
+        "p95_us": 143270
+      },
+      "cardinal_answer": [
+        [
+          "frontend",
+          99384045
+        ],
+        [
+          "checkout",
+          1262794
+        ],
+        [
+          "currency",
+          162918
+        ],
+        [
+          "quote",
+          13188
+        ],
+        [
+          "cart",
+          2958
+        ],
+        [
+          "product-catalog",
+          213
+        ],
+        [
+          "kafka",
+          60
+        ],
+        [
+          "ad",
+          58
+        ],
+        [
+          "fraud-detection",
+          6
+        ]
+      ],
+      "tantivy_answer": [
+        [
+          "frontend",
+          99384045
+        ],
+        [
+          "checkout",
+          1262794
+        ],
+        [
+          "currency",
+          162918
+        ],
+        [
+          "quote",
+          13188
+        ],
+        [
+          "cart",
+          2958
+        ],
+        [
+          "product-catalog",
+          213
+        ],
+        [
+          "kafka",
+          60
+        ],
+        [
+          "ad",
+          58
+        ],
+        [
+          "fraud-detection",
+          6
+        ]
+      ],
+      "cardinal_matched": 100840574,
+      "tantivy_matched": 100826240,
+      "parity": "Pass",
+      "status": "Ok"
+    },
+    {
+      "query": "Q7",
+      "description": "count(connection AND reset) by service",
+      "cardinal_intended": "adaptive_planner",
+      "tantivy_intended": "tantivy_terms_agg",
+      "cardinal_path": {
+        "engine": "Cardinal",
+        "path": "file_local_postings",
+        "planned_path": "file_local_postings",
+        "workers": 1,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "bundle_open_attempts": 0,
+          "bundles_opened": 0,
+          "bundles_selected": 0,
+          "bytes_decompressed": 35705951640,
+          "bytes_mapped": 0,
+          "columns_inflated": 0,
+          "cpu_micros": 8268130,
+          "early_stop_index": 0,
+          "emit_micros": 1,
+          "eval_micros": 556226,
+          "filter_micros": 413528,
+          "matched_rows": 16981567,
+          "open_micros": 142685,
+          "other_micros": 12,
+          "partitions_skipped_by_bloom": 0,
+          "partitions_skipped_by_stats": 0,
+          "partitions_visited": 6003,
+          "planner_bundle_scan_bitmap_ops": 0,
+          "planner_bundle_scan_cost": 2008224912,
+          "planner_bundle_scan_eligible": 1,
+          "planner_bundle_scan_object_opens": 2008,
+          "planner_bundle_scan_row_visits": 2000000000,
+          "planner_candidate_count": 3,
+          "planner_file_local_postings_bitmap_ops": 2008,
+          "planner_file_local_postings_cost": 17092368,
+          "planner_file_local_postings_eligible": 1,
+          "planner_file_local_postings_object_opens": 4016,
+          "planner_file_local_postings_row_visits": 0,
+          "planner_generation_eligible": 0,
+          "planner_selected_cost": 17092368,
+          "posting_bytes_touched": 0,
+          "rows_materialized": 2,
+          "sidecar_open_attempts": 2008,
+          "sidecars_opened": 2008,
+          "teardown_micros": 0,
+          "timed_sample_micros": 820635,
+          "timestamp_values_read": 0,
+          "topk_probe_micros": 0,
+          "topk_probe_rounds": 0,
+          "worker_tasks": 0,
+          "worker_threads": 0
+        }
+      },
+      "tantivy_path": {
+        "engine": "Tantivy",
+        "path": "tantivy_terms_agg",
+        "workers": 32,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "timed_sample_micros": 52482
+        }
+      },
+      "cardinal_timings": {
+        "samples_us": [
+          829515,
+          802745,
+          805078,
+          823219,
+          820635
+        ],
+        "warmup_us": 816819,
+        "p50_us": 820635,
+        "p95_us": 829515
+      },
+      "tantivy_timings": {
+        "samples_us": [
+          52832,
+          52482,
+          51407,
+          56089,
+          47180
+        ],
+        "warmup_us": 52408,
+        "p50_us": 52482,
+        "p95_us": 56089
+      },
+      "cardinal_answer": [
+        [
+          "frontend",
+          16981566
+        ]
+      ],
+      "tantivy_answer": [
+        [
+          "frontend",
+          16981566
+        ]
+      ],
+      "cardinal_matched": 16981567,
+      "tantivy_matched": 16981566,
+      "parity": "Pass",
+      "status": "Ok"
+    },
+    {
+      "query": "Q8",
+      "description": "hourly(checkout AND payment)",
+      "cardinal_intended": "adaptive_planner",
+      "tantivy_intended": "tantivy_hour_agg",
+      "cardinal_path": {
+        "engine": "Cardinal",
+        "path": "file_local_postings",
+        "planned_path": "file_local_postings",
+        "workers": 1,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "bundle_open_attempts": 0,
+          "bundles_opened": 0,
+          "bundles_selected": 0,
+          "bytes_decompressed": 35705951640,
+          "bytes_mapped": 0,
+          "columns_inflated": 0,
+          "cpu_micros": 8003534,
+          "early_stop_index": 0,
+          "emit_micros": 0,
+          "eval_micros": 418536,
+          "filter_micros": 277028,
+          "matched_rows": 2066686,
+          "open_micros": 141495,
+          "other_micros": 13,
+          "partitions_skipped_by_bloom": 0,
+          "partitions_skipped_by_stats": 0,
+          "partitions_visited": 6003,
+          "planner_bundle_scan_bitmap_ops": 0,
+          "planner_bundle_scan_cost": 2008224912,
+          "planner_bundle_scan_eligible": 1,
+          "planner_bundle_scan_object_opens": 2008,
+          "planner_bundle_scan_row_visits": 2000000000,
+          "planner_candidate_count": 3,
+          "planner_file_local_postings_bitmap_ops": 0,
+          "planner_file_local_postings_cost": 16706832,
+          "planner_file_local_postings_eligible": 1,
+          "planner_file_local_postings_object_opens": 4016,
+          "planner_file_local_postings_row_visits": 0,
+          "planner_generation_eligible": 0,
+          "planner_selected_cost": 16706832,
+          "posting_bytes_touched": 0,
+          "rows_materialized": 1,
+          "sidecar_open_attempts": 2008,
+          "sidecars_opened": 2008,
+          "teardown_micros": 0,
+          "timed_sample_micros": 684925,
+          "timestamp_values_read": 0,
+          "topk_probe_micros": 0,
+          "topk_probe_rounds": 0,
+          "worker_tasks": 0,
+          "worker_threads": 0
+        }
+      },
+      "tantivy_path": {
+        "engine": "Tantivy",
+        "path": "tantivy_hour_agg",
+        "workers": 32,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "timed_sample_micros": 67094
+        }
+      },
+      "cardinal_timings": {
+        "samples_us": [
+          688339,
+          686231,
+          680505,
+          683277,
+          684925
+        ],
+        "warmup_us": 690652,
+        "p50_us": 684925,
+        "p95_us": 688339
+      },
+      "tantivy_timings": {
+        "samples_us": [
+          66665,
+          66978,
+          67094,
+          67225,
+          67106
+        ],
+        "warmup_us": 67639,
+        "p50_us": 67094,
+        "p95_us": 67225
+      },
+      "cardinal_answer": [
+        [
+          1758585600000,
+          2066686
+        ]
+      ],
+      "tantivy_answer": [
+        [
+          1758585600000,
+          2066686
+        ]
+      ],
+      "cardinal_matched": 2066686,
+      "tantivy_matched": 2066686,
+      "parity": "Pass",
+      "status": "Ok"
+    },
+    {
+      "query": "Q9",
+      "description": "hourly(connection AND reset)",
+      "cardinal_intended": "adaptive_planner",
+      "tantivy_intended": "tantivy_hour_agg",
+      "cardinal_path": {
+        "engine": "Cardinal",
+        "path": "file_local_postings",
+        "planned_path": "file_local_postings",
+        "workers": 1,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "bundle_open_attempts": 0,
+          "bundles_opened": 0,
+          "bundles_selected": 0,
+          "bytes_decompressed": 35705951640,
+          "bytes_mapped": 0,
+          "columns_inflated": 0,
+          "cpu_micros": 6644751,
+          "early_stop_index": 0,
+          "emit_micros": 0,
+          "eval_micros": 370195,
+          "filter_micros": 228126,
+          "matched_rows": 16981567,
+          "open_micros": 142057,
+          "other_micros": 12,
+          "partitions_skipped_by_bloom": 0,
+          "partitions_skipped_by_stats": 0,
+          "partitions_visited": 6003,
+          "planner_bundle_scan_bitmap_ops": 0,
+          "planner_bundle_scan_cost": 2008224912,
+          "planner_bundle_scan_eligible": 1,
+          "planner_bundle_scan_object_opens": 2008,
+          "planner_bundle_scan_row_visits": 2000000000,
+          "planner_candidate_count": 3,
+          "planner_file_local_postings_bitmap_ops": 2008,
+          "planner_file_local_postings_cost": 17092368,
+          "planner_file_local_postings_eligible": 1,
+          "planner_file_local_postings_object_opens": 4016,
+          "planner_file_local_postings_row_visits": 0,
+          "planner_generation_eligible": 0,
+          "planner_selected_cost": 17092368,
+          "posting_bytes_touched": 0,
+          "rows_materialized": 1,
+          "sidecar_open_attempts": 2008,
+          "sidecars_opened": 2008,
+          "teardown_micros": 0,
+          "timed_sample_micros": 633099,
+          "timestamp_values_read": 0,
+          "topk_probe_micros": 0,
+          "topk_probe_rounds": 0,
+          "worker_tasks": 0,
+          "worker_threads": 0
+        }
+      },
+      "tantivy_path": {
+        "engine": "Tantivy",
+        "path": "tantivy_hour_agg",
+        "workers": 32,
+        "external_slicing": false,
+        "benchmark_pool": false,
+        "counters": {
+          "timed_sample_micros": 104146
+        }
+      },
+      "cardinal_timings": {
+        "samples_us": [
+          633099,
+          639530,
+          631172,
+          620149,
+          636759
+        ],
+        "warmup_us": 626244,
+        "p50_us": 633099,
+        "p95_us": 639530
+      },
+      "tantivy_timings": {
+        "samples_us": [
+          108438,
+          102934,
+          106401,
+          104146,
+          103682
+        ],
+        "warmup_us": 109505,
+        "p50_us": 104146,
+        "p95_us": 108438
+      },
+      "cardinal_answer": [
+        [
+          1758585600000,
+          16981567
+        ]
+      ],
+      "tantivy_answer": [
+        [
+          1758585600000,
+          16981567
+        ]
+      ],
+      "cardinal_matched": 16981567,
+      "tantivy_matched": 16981567,
+      "parity": "Pass",
+      "status": "Ok"
+    }
+  ]
+}

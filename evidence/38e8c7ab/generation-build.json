@@ -1,0 +1,265 @@
+{
+  "arm": "2",
+  "artifact_bytes": 2086267523,
+  "artifacts": [
+    {
+      "byte_len": 331977152,
+      "name": "terms.post"
+    },
+    {
+      "byte_len": 312,
+      "name": "terms.dict"
+    },
+    {
+      "byte_len": 587,
+      "name": "dim-0.dict"
+    },
+    {
+      "byte_len": 754289088,
+      "name": "dim-0.post"
+    },
+    {
+      "byte_len": 1000000384,
+      "name": "dim-0.codes"
+    }
+  ],
+  "bound_bundles": [
+    {
+      "global_row_start": 0,
+      "max_timestamp": 1758585600910239000,
+      "min_timestamp": 1758585600000000000,
+      "name": "s00_000.lkrn.zst",
+      "open_ns": 6667934,
+      "ordinal": 0,
+      "row_count": 500000
+    },
+    {
+      "global_row_start": 999713905,
+      "max_timestamp": 1758587364039037000,
+      "min_timestamp": 1758587363566931000,
+      "name": "s17_110.lkrn.zst",
+      "open_ns": 3560545,
+      "ordinal": 2007,
+      "row_count": 286095
+    }
+  ],
+  "build_id": "92b34388b40c161f0c7d89787de7951b",
+  "bundle_count": 2008,
+  "bundles_dir": "/data/p12/bundles_stripped",
+  "columns": {
+    "dimension": "service_name",
+    "text": "message",
+    "timestamp": "chq_tsns"
+  },
+  "containers_per_shard": 0,
+  "dimensions": [
+    {
+      "name": "service_name",
+      "value_count": 16
+    }
+  ],
+  "generation": 2026082402,
+  "generation_dir": "/data/q1q9-final-02c556db/generation",
+  "limit": 0,
+  "manifest": "/data/q1q9-final-02c556db/generation/generation.lkrnmf",
+  "max_timestamp": 1758587364039037000,
+  "min_timestamp": 1758585600000000000,
+  "peak_rss_after_build": 26425925632,
+  "phases_ns": {
+    "build_generation": 641447942073,
+    "link_bundles": 28326330,
+    "open_generation": 387654612,
+    "verify_scan": 18502576025
+  },
+  "process": {
+    "argv": [
+      "/home/ec2-user/eprime/q1q9-fix/bench/genpred/target/release/gen_p10_build",
+      "--bundles-dir",
+      "/data/p12/bundles_stripped",
+      "--suffix",
+      ".lkrn.zst",
+      "--out",
+      "/data/q1q9-final-02c556db/generation",
+      "--text-column",
+      "message",
+      "--timestamp-column",
+      "chq_tsns",
+      "--dimension-column",
+      "service_name",
+      "--vocabulary",
+      "textbench-q1-q9",
+      "--generation",
+      "2026082402",
+      "--validation",
+      "deep",
+      "--link-mode",
+      "symlink",
+      "--verify",
+      "true",
+      "--verify-threads",
+      "32",
+      "--verify-bundles",
+      "true",
+      "--canonical",
+      "true",
+      "--report",
+      "/data/q1q9-final-02c556db/generation-build.json"
+    ],
+    "epoch_s": 1787622007,
+    "peak_rss_bytes": 26425925632,
+    "sys_s": 25.797392,
+    "user_s": 1182.900112
+  },
+  "row_count": 1000000000,
+  "term_count": 8,
+  "validation": "deep",
+  "verification": {
+    "oracle": "row-by-row scan of the same bundles, genindex::for_each_token + term_id",
+    "queries": [
+      {
+        "cardinality": 151,
+        "group_vector_exact_match": true,
+        "groups": [
+          [
+            "kafka",
+            60
+          ],
+          [
+            "ad",
+            58
+          ],
+          [
+            "fraud-detection",
+            6
+          ]
+        ],
+        "query": "Q4",
+        "row_set_exact_match": true
+      },
+      {
+        "cardinality": 108704929,
+        "group_vector_exact_match": true,
+        "groups": [
+          [
+            "frontend",
+            99456309
+          ],
+          [
+            "payment",
+            7772727
+          ],
+          [
+            "checkout",
+            1263650
+          ],
+          [
+            "currency",
+            162918
+          ],
+          [
+            "quote",
+            13188
+          ],
+          [
+            "recommendation",
+            10954
+          ],
+          [
+            "cart",
+            2958
+          ],
+          [
+            "shipping",
+            2471
+          ],
+          [
+            "product-catalog",
+            1827
+          ],
+          [
+            "ad",
+            1553
+          ],
+          [
+            "kafka",
+            1292
+          ],
+          [
+            "fraud-detection",
+            392
+          ],
+          [
+            "load-generator",
+            261
+          ],
+          [
+            "email",
+            85
+          ]
+        ],
+        "query": "Q5",
+        "row_set_exact_match": true
+      },
+      {
+        "cardinality": 100840574,
+        "group_vector_exact_match": true,
+        "groups": [
+          [
+            "frontend",
+            99384045
+          ],
+          [
+            "checkout",
+            1262794
+          ],
+          [
+            "currency",
+            162918
+          ],
+          [
+            "quote",
+            13188
+          ],
+          [
+            "cart",
+            2958
+          ],
+          [
+            "product-catalog",
+            213
+          ],
+          [
+            "kafka",
+            60
+          ],
+          [
+            "ad",
+            58
+          ],
+          [
+            "fraud-detection",
+            6
+          ]
+        ],
+        "query": "Q6",
+        "row_set_exact_match": true
+      },
+      {
+        "cardinality": 16981567,
+        "group_vector_exact_match": true,
+        "groups": [
+          [
+            "frontend",
+            16981566
+          ]
+        ],
+        "query": "Q7",
+        "row_set_exact_match": true
+      }
+    ],
+    "scan_ns": 18502576025,
+    "threads": 32
+  },
+  "verify_bundles_ran": true,
+  "vocabulary": "textbench-q1-q9"
+}

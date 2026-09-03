@@ -1,0 +1,148 @@
+index_from_lkrn: 2008 bundles under /data/p12/bundles_stripped
+  progress: 10000000 docs, 190719 docs/sec, 0.9 min elapsed
+  progress: 20000000 docs, 190603 docs/sec, 1.7 min elapsed
+  progress: 30000000 docs, 190640 docs/sec, 2.6 min elapsed
+  progress: 40000000 docs, 190637 docs/sec, 3.5 min elapsed
+  progress: 50000000 docs, 190645 docs/sec, 4.4 min elapsed
+  progress: 60000000 docs, 190625 docs/sec, 5.2 min elapsed
+  progress: 70000000 docs, 190638 docs/sec, 6.1 min elapsed
+  progress: 80000000 docs, 190654 docs/sec, 7.0 min elapsed
+  progress: 90000000 docs, 190653 docs/sec, 7.9 min elapsed
+  progress: 100000000 docs, 190736 docs/sec, 8.7 min elapsed
+  progress: 110000000 docs, 190721 docs/sec, 9.6 min elapsed
+  progress: 120000000 docs, 190757 docs/sec, 10.5 min elapsed
+  progress: 130000000 docs, 192094 docs/sec, 11.3 min elapsed
+  progress: 140000000 docs, 191045 docs/sec, 12.2 min elapsed
+  progress: 150000000 docs, 191049 docs/sec, 13.1 min elapsed
+  progress: 160000000 docs, 191082 docs/sec, 14.0 min elapsed
+  progress: 170000000 docs, 191089 docs/sec, 14.8 min elapsed
+  progress: 180000000 docs, 191077 docs/sec, 15.7 min elapsed
+  progress: 190000000 docs, 191089 docs/sec, 16.6 min elapsed
+  progress: 200000000 docs, 191087 docs/sec, 17.4 min elapsed
+  progress: 210000000 docs, 191078 docs/sec, 18.3 min elapsed
+  progress: 220000000 docs, 191088 docs/sec, 19.2 min elapsed
+  progress: 230000000 docs, 191089 docs/sec, 20.1 min elapsed
+  progress: 240000000 docs, 191099 docs/sec, 20.9 min elapsed
+  progress: 250000000 docs, 195563 docs/sec, 21.3 min elapsed
+  progress: 260000000 docs, 194460 docs/sec, 22.3 min elapsed
+  progress: 270000000 docs, 194188 docs/sec, 23.2 min elapsed
+  progress: 280000000 docs, 194082 docs/sec, 24.0 min elapsed
+  progress: 290000000 docs, 193988 docs/sec, 24.9 min elapsed
+  progress: 300000000 docs, 193900 docs/sec, 25.8 min elapsed
+  progress: 310000000 docs, 193823 docs/sec, 26.7 min elapsed
+  progress: 320000000 docs, 193748 docs/sec, 27.5 min elapsed
+  progress: 330000000 docs, 193670 docs/sec, 28.4 min elapsed
+  progress: 340000000 docs, 193601 docs/sec, 29.3 min elapsed
+  progress: 350000000 docs, 193528 docs/sec, 30.1 min elapsed
+  progress: 360000000 docs, 193442 docs/sec, 31.0 min elapsed
+  progress: 370000000 docs, 193327 docs/sec, 31.9 min elapsed
+  progress: 380000000 docs, 193158 docs/sec, 32.8 min elapsed
+  progress: 390000000 docs, 193092 docs/sec, 33.7 min elapsed
+  progress: 400000000 docs, 193050 docs/sec, 34.5 min elapsed
+  progress: 410000000 docs, 193019 docs/sec, 35.4 min elapsed
+  progress: 420000000 docs, 192970 docs/sec, 36.3 min elapsed
+  progress: 430000000 docs, 192925 docs/sec, 37.1 min elapsed
+  progress: 440000000 docs, 192882 docs/sec, 38.0 min elapsed
+  progress: 450000000 docs, 192852 docs/sec, 38.9 min elapsed
+  progress: 460000000 docs, 192811 docs/sec, 39.8 min elapsed
+  progress: 470000000 docs, 192774 docs/sec, 40.6 min elapsed
+  progress: 480000000 docs, 192740 docs/sec, 41.5 min elapsed
+  progress: 490000000 docs, 192591 docs/sec, 42.4 min elapsed
+  progress: 500000000 docs, 192366 docs/sec, 43.3 min elapsed
+  progress: 510000000 docs, 192290 docs/sec, 44.2 min elapsed
+  progress: 520000000 docs, 192276 docs/sec, 45.1 min elapsed
+  progress: 530000000 docs, 192264 docs/sec, 45.9 min elapsed
+  progress: 540000000 docs, 192241 docs/sec, 46.8 min elapsed
+  progress: 550000000 docs, 192218 docs/sec, 47.7 min elapsed
+  progress: 560000000 docs, 192203 docs/sec, 48.6 min elapsed
+  progress: 570000000 docs, 192179 docs/sec, 49.4 min elapsed
+  progress: 580000000 docs, 192164 docs/sec, 50.3 min elapsed
+  progress: 590000000 docs, 192152 docs/sec, 51.2 min elapsed
+  progress: 600000000 docs, 192124 docs/sec, 52.0 min elapsed
+  progress: 610000000 docs, 192106 docs/sec, 52.9 min elapsed
+  progress: 620000000 docs, 191933 docs/sec, 53.8 min elapsed
+  progress: 630000000 docs, 191854 docs/sec, 54.7 min elapsed
+  progress: 640000000 docs, 191835 docs/sec, 55.6 min elapsed
+  progress: 650000000 docs, 191820 docs/sec, 56.5 min elapsed
+  progress: 660000000 docs, 191806 docs/sec, 57.3 min elapsed
+  progress: 670000000 docs, 191792 docs/sec, 58.2 min elapsed
+  progress: 680000000 docs, 191780 docs/sec, 59.1 min elapsed
+  progress: 690000000 docs, 191773 docs/sec, 60.0 min elapsed
+  progress: 700000000 docs, 191759 docs/sec, 60.8 min elapsed
+  progress: 710000000 docs, 191757 docs/sec, 61.7 min elapsed
+  progress: 720000000 docs, 191729 docs/sec, 62.6 min elapsed
+  progress: 730000000 docs, 191645 docs/sec, 63.5 min elapsed
+  progress: 740000000 docs, 191503 docs/sec, 64.4 min elapsed
+  progress: 750000000 docs, 191437 docs/sec, 65.3 min elapsed
+  progress: 760000000 docs, 191423 docs/sec, 66.2 min elapsed
+  progress: 770000000 docs, 191420 docs/sec, 67.0 min elapsed
+  progress: 780000000 docs, 191416 docs/sec, 67.9 min elapsed
+  progress: 790000000 docs, 191416 docs/sec, 68.8 min elapsed
+  progress: 800000000 docs, 191414 docs/sec, 69.7 min elapsed
+  progress: 810000000 docs, 191404 docs/sec, 70.5 min elapsed
+  progress: 820000000 docs, 191397 docs/sec, 71.4 min elapsed
+  progress: 830000000 docs, 191397 docs/sec, 72.3 min elapsed
+  progress: 840000000 docs, 191370 docs/sec, 73.2 min elapsed
+  progress: 850000000 docs, 191254 docs/sec, 74.1 min elapsed
+  progress: 860000000 docs, 191170 docs/sec, 75.0 min elapsed
+  progress: 870000000 docs, 191106 docs/sec, 75.9 min elapsed
+  progress: 880000000 docs, 191101 docs/sec, 76.7 min elapsed
+  progress: 890000000 docs, 191098 docs/sec, 77.6 min elapsed
+  progress: 900000000 docs, 191092 docs/sec, 78.5 min elapsed
+  progress: 910000000 docs, 191087 docs/sec, 79.4 min elapsed
+  progress: 920000000 docs, 191083 docs/sec, 80.2 min elapsed
+  progress: 930000000 docs, 191081 docs/sec, 81.1 min elapsed
+  progress: 940000000 docs, 191074 docs/sec, 82.0 min elapsed
+  progress: 950000000 docs, 191066 docs/sec, 82.9 min elapsed
+  progress: 960000000 docs, 191027 docs/sec, 83.8 min elapsed
+  progress: 970000000 docs, 190973 docs/sec, 84.7 min elapsed
+  progress: 980000000 docs, 190894 docs/sec, 85.6 min elapsed
+  progress: 990000000 docs, 190823 docs/sec, 86.5 min elapsed
+  progress: 1000000000 docs, 190821 docs/sec, 87.3 min elapsed
+  feed complete: 1000000000 docs in 5240.51s
+{
+  "blake3_whole_row_stream": "70665861623788aee065db9af987538edbb8918c41cfc8a8fa32ad2d7d86b3d3",
+  "bundles": 2008,
+  "bundles_dir": "/data/p12/bundles_stripped",
+  "commit_s": 4.584448004,
+  "docs": 1000000000,
+  "docs_per_sec": 189593.9647932887,
+  "feed_s": 5240.509814358,
+  "final_segments": 27,
+  "fingerprints_path": "/data/q1q9-final-02c556db/tantivy/fingerprints.json",
+  "index_bytes": 45871043173,
+  "jobs": 8,
+  "memory_budget": 17179869184,
+  "merge_wait_s": 29.332945005,
+  "out_dir": "/data/q1q9-final-02c556db/tantivy",
+  "peak_rss_kb": 21554040,
+  "row_count": 1000000000,
+  "sys_cpu_s": 9406.806146,
+  "tantivy": "0.24",
+  "user_cpu_s": 15067.126502,
+  "wall_s": 5274.429495107,
+  "writer_threads": 24
+}
+	Command being timed: "/home/ec2-user/eprime/q1q9-fix/bench/tantivy/target/release/index_from_lkrn --bundles-dir /data/p12/bundles_stripped --out /data/q1q9-final-02c556db/tantivy --expect-rows 1000000000 --fingerprint-out /data/q1q9-final-02c556db/tantivy-source-fingerprints.json --jobs 8 --writer-threads 24 --memory-budget 17179869184"
+	User time (seconds): 15067.12
+	System time (seconds): 9407.24
+	Percent of CPU this job got: 463%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:27:54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21554040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 10
+	Minor (reclaiming a frame) page faults: 44927989
+	Voluntary context switches: 1999266855
+	Involuntary context switches: 1489140
+	Swaps: 0
+	File system inputs: 184
+	File system outputs: 185231432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

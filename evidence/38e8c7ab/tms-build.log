@@ -1,0 +1,23 @@
+SSM command: 612381de-ae49-4237-99a9-a3ed1ccf27b7
+SSM comment: rebuild-final-tms-02c
+
+sidecar_rebuild: 2008 bundle(s), jobs=32, label_column=Some("service_name"), overwrite=true, verify=true
+sidecar_rebuild: done in 53.92s — written=2008 skipped=0 failed=0 bytes=16961132765 terms=218957508
+	Command being timed: "/home/ec2-user/eprime/q1q9-fix/lkrn/target/release/sidecar_rebuild --bundles-dir /data/q1q9-final-02c556db/bundles --label-column service_name --jobs 32 --overwrite --verify"
+	User time (seconds): 1668.05
+	System time (seconds): 21.18
+	Percent of CPU this job got: 3132%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:53.93
+	Maximum resident set size (kbytes): 1304180
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5106648
+	Voluntary context switches: 153121
+	Involuntary context switches: 15671
+	File system inputs: 0
+	File system outputs: 33135336
+	Exit status: 0
+
+The builder exited successfully and verified all 2,008 outputs. The enclosing SSM
+command was marked failed only because a subsequent tee could not create the
+root-owned `/data/q1q9-final-02c556db/tms-build.log`; this file preserves the
+captured SSM stdout.

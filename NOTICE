@@ -1,0 +1,6 @@
+Cardinal TextBench harness
+Copyright 2025-2026 CardinalHQ, Inc.
+
+This product includes a benchmark adapter for Tantivy and references the
+ClickHouse/TextBench public dataset. Tantivy and TextBench are separate works
+distributed under their respective licenses.

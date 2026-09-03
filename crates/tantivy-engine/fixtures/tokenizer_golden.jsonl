@@ -1,0 +1,25 @@
+{"input":"connection_termination_details","expected":["connection","termination","details"]}
+{"input":"foo-BAR baz_qux 123 alpha!beta","expected":["foo","BAR","baz","qux","123","alpha","beta"]}
+{"input":"http2_client","expected":["http2","client"]}
+{"input":"","expected":[]}
+{"input":"...leading","expected":["leading"]}
+{"input":"trailing...","expected":["trailing"]}
+{"input":"multiple   spaces\tand\nnewlines","expected":["multiple","spaces","and","newlines"]}
+{"input":"UPPER Lower MixEd","expected":["UPPER","Lower","MixEd"]}
+{"input":"123abc456","expected":["123abc456"]}
+{"input":"a_b_c_d","expected":["a","b","c","d"]}
+{"input":"payment_failed_order","expected":["payment","failed","order"]}
+{"input":"connection reset by peer","expected":["connection","reset","by","peer"]}
+{"input":"connection-reset","expected":["connection","reset"]}
+{"input":"exception:NullPointerException@Line42","expected":["exception","NullPointerException","Line42"]}
+{"input":"foo","expected":["foo"]}
+{"input":"...","expected":[]}
+{"input":"_","expected":[]}
+{"input":"__foo__","expected":["foo"]}
+{"input":"HTTP/1.1 200 OK","expected":["HTTP","1","1","200","OK"]}
+{"input":"error=timeout;code=13","expected":["error","timeout","code","13"]}
+{"input":"emoji 🚀 rocket","expected":["emoji","rocket"]}
+{"input":"café","expected":["caf"]}
+{"input":"under_score_only","expected":["under","score","only"]}
+{"input":"a","expected":["a"]}
+{"input":"9","expected":["9"]}

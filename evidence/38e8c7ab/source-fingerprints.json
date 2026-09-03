@@ -1,0 +1,20 @@
+{
+  "row_count": 1000000000,
+  "blake3_chq_tsns_i64_stream": "46fe6d0c3b7ec3b35233cee44b842785742ec6ee7aeb7c29efa9ed100fcb56e8",
+  "blake3_message_body_stream": "868e6d3bcba4a9fdc172b0e6c533406a1f0463408396c8957e4d937a8bcfb0ea",
+  "blake3_service_name_stream": "ea5e58d7a390ddb4857baa1cc42e72ab4a2f62cac366b1c7110ab1dfd71cd429",
+  "blake3_severity_number_stream": "25c6ff4be471bd34ee6831ef10e1e69ccf1f372ce511ce4cb48e32b6762e8711",
+  "blake3_whole_row_stream": "70665861623788aee065db9af987538edbb8918c41cfc8a8fa32ad2d7d86b3d3",
+  "chq_tsns_source_dtypes": [
+    "Int64"
+  ],
+  "message_source_dtypes": [
+    "Varchar"
+  ],
+  "service_name_source_dtypes": [
+    "Varchar"
+  ],
+  "severity_source_dtypes": [
+    "Int64"
+  ]
+}

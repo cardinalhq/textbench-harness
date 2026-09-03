@@ -1,0 +1,66 @@
+{
+  "status": "published_external_baseline",
+  "scope": "ClickHouse TextBench 1B hot query latency and storage; not a same-sitting Cardinal run",
+  "upstream": {
+    "repository": "https://github.com/ClickHouse/TextBench",
+    "pinned_commit": "a7bb4e024f4648e90a30b6f0d00ef1223fd7d7e5",
+    "result_path": "clickhouse/results/m6i.8xlarge_1b.json",
+    "result_sha256": "9e795f8307e1fbc732e4f3a8009f989e9d5bc89aaee5589066fae0166cd11a2e",
+    "query_path": "clickhouse/queries.sql",
+    "schema_path": "clickhouse/create.sql",
+    "result_and_query_origin_commit": "0f22b91ada5e2cf066ea186f22e73d39f333dede"
+  },
+  "environment": {
+    "system": "ClickHouse",
+    "version": "26.3.1.799",
+    "instance": "AWS EC2 m6i.8xlarge",
+    "vcpus": 32,
+    "ram_gib": 128,
+    "topology": "single node"
+  },
+  "methodology": {
+    "clickhouse": "best of published warm runs 2 and 3",
+    "cardinal_and_tantivy": "interleaved ten-sample warm p50 after correctness call and one discarded warmup",
+    "warning": "The ClickHouse result is a separately published same-instance-class baseline, not a same-sitting statistical comparison."
+  },
+  "hot_best_ms": {
+    "Q1": 25,
+    "Q2": 49,
+    "Q3": 206,
+    "Q4": 28,
+    "Q5": 105,
+    "Q6": 91,
+    "Q7": 72,
+    "Q8": 30,
+    "Q9": 72
+  },
+  "three_engine_query_comparison": {
+    "rows": [
+      {"query": "Q1", "cardinal_ms": 35.392, "tantivy_ms": 335.533, "clickhouse_ms": 25, "winner": "ClickHouse"},
+      {"query": "Q2", "cardinal_ms": 30.846, "tantivy_ms": 571.448, "clickhouse_ms": 49, "winner": "Cardinal"},
+      {"query": "Q3", "cardinal_ms": 34.516, "tantivy_ms": 494.240, "clickhouse_ms": 206, "winner": "Cardinal"},
+      {"query": "Q4", "cardinal_ms": 0.737, "tantivy_ms": 2.395, "clickhouse_ms": 28, "winner": "Cardinal"},
+      {"query": "Q5", "cardinal_ms": 18.773, "tantivy_ms": 60.242, "clickhouse_ms": 105, "winner": "Cardinal"},
+      {"query": "Q6", "cardinal_ms": 85.893, "tantivy_ms": 144.170, "clickhouse_ms": 91, "winner": "Cardinal"},
+      {"query": "Q7", "cardinal_ms": 31.794, "tantivy_ms": 52.464, "clickhouse_ms": 72, "winner": "Cardinal"},
+      {"query": "Q8", "cardinal_ms": 32.600, "tantivy_ms": 66.727, "clickhouse_ms": 30, "winner": "ClickHouse"},
+      {"query": "Q9", "cardinal_ms": 7.420, "tantivy_ms": 107.225, "clickhouse_ms": 72, "winner": "Cardinal"}
+    ],
+    "cardinal_wins_vs_clickhouse": 7,
+    "cardinal_geomean_speedup_vs_clickhouse": 3.149463,
+    "cardinal_wins_vs_tantivy": 9,
+    "cardinal_geomean_speedup_vs_tantivy": 5.053252
+  },
+  "storage_1b": {
+    "total_bytes_on_disk": 53135582221,
+    "compressed_column_bytes": 42234551650,
+    "full_text_inverted_index_bytes": 10894247839,
+    "sparse_primary_index_bytes": 6780681
+  },
+  "ingest": {
+    "exact_cpu_core_seconds_published": false,
+    "exact_1b_load_time_published": false,
+    "derived_lower_bound_events_per_provisioned_vcpu_second": 108506.944,
+    "derivation": "50000000000 / (4 * 3600 * 32); actual value is greater because the article says under four hours"
+  }
+}
